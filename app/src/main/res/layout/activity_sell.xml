@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SellActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/coin_icon"
+        android:layout_height="50dp"></ImageView>
+    <TextView
+        android:id="@+id/currentPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="1 BTC = "
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/SellingArea"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:hint="판매 코인 개수 입력."
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/myCoinCount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="보유 코인 개수 : "
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/sellBtn"
+        android:layout_width="match_parent"
+        android:text="매도"
+        android:layout_height="50dp"></Button>
+</LinearLayout>

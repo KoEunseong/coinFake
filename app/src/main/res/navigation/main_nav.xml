@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav.xml"
+    app:startDestination="@id/exchangeFragment">
+
+    <fragment
+        android:id="@+id/exchangeFragment"
+        android:name="com.example.coinfake.fragment.ExchangeFragment"
+        android:label="fragment_exchange"
+        tools:layout="@layout/fragment_exchange" >
+        <action
+            android:id="@+id/action_exchangeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_exchangeFragment_to_myAssetFragment"
+            app:destination="@id/myAssetFragment" />
+        <action
+            android:id="@+id/action_exchangeFragment_to_rankingFragment"
+            app:destination="@id/rankingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.coinfake.fragment.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_exchangeFragment"
+            app:destination="@id/exchangeFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_myAssetFragment"
+            app:destination="@id/myAssetFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_rankingFragment"
+            app:destination="@id/rankingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAssetFragment"
+        android:name="com.example.coinfake.fragment.MyAssetFragment"
+        android:label="fragment_my_asset"
+        tools:layout="@layout/fragment_my_asset" >
+        <action
+            android:id="@+id/action_myAssetFragment_to_exchangeFragment"
+            app:destination="@id/exchangeFragment" />
+        <action
+            android:id="@+id/action_myAssetFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_myAssetFragment_to_rankingFragment"
+            app:destination="@id/rankingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.coinfake.fragment.RankingFragment"
+        android:label="RankingFragment" >
+        <action
+            android:id="@+id/action_rankingFragment_to_exchangeFragment"
+            app:destination="@id/exchangeFragment" />
+        <action
+            android:id="@+id/action_rankingFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_rankingFragment_to_myAssetFragment"
+            app:destination="@id/myAssetFragment" />
+    </fragment>
+</navigation>

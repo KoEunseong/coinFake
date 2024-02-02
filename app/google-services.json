@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "492831662058",
+    "project_id": "fake-coin-fa613",
+    "storage_bucket": "fake-coin-fa613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492831662058:android:40f3187a2735bd3dd11c93",
+        "android_client_info": {
+          "package_name": "com.example.coinfake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492831662058-8c54lhbefmp9bgv13rqknt4jvb8at5u4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZw_RSBwA3YDnq9OabnhMbA2u5SEn-zLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492831662058-8c54lhbefmp9bgv13rqknt4jvb8at5u4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
